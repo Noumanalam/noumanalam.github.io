@@ -68,8 +68,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.7rem 10%;
-  height: 6.5rem;
+  padding: 1rem 10%;
+  height: 6rem;
   background-color: #efe8e8;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
 }
@@ -345,6 +345,49 @@ header .navbar ul li a:hover {
 .social-icons a.instagram:hover {
   background-color: #ee00da;
 }
+.cv-button-row {
+  margin: 2rem 0 1.5rem;
+}
+.cv-button-row .cv-btn {
+  font-size: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: #2a1a1a;
+  background-color: #a9dbc0de;
+  min-width: 140px;
+  height: 50px;
+  padding: 0 18px;
+  text-align: center;
+  border-radius: 999px;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: 0.05rem;
+  border: 2px solid rgba(10, 9, 9, 0.15);
+  box-shadow: 0 10px 24px rgba(9, 9, 9, 0.18);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+.cv-button-row .cv-btn:hover {
+  color: #0a0909;
+  background-color: #4ada8dde;
+  transform: translateY(-1px);
+}
+.cv-button-row .cv-btn i {
+  font-size: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 90%;
+  border: 1px solid rgba(16, 5, 5, 0.5);
+  background-color: rgba(255, 255, 255, 0.14);
+  color: #050404;
+}
+
+/* social icons end */
 /* social icons end */
 
 /* hero media queries starts*/
@@ -840,7 +883,9 @@ header .navbar ul li a:hover {
 #certificates .box-container .box {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 95%;
+  max-width: 120rem;
+  min-height: 10rem;  /* add this */
   border-radius: 0.5rem;
   box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -858,7 +903,7 @@ header .navbar ul li a:hover {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 3rem;
   flex-wrap: wrap;
   flex: 1 1 70rem;
 }
